@@ -22,10 +22,10 @@
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-          <li class = "item"><a>Stay</a></li>
-          <li class = "item"><a>About</a></li>
-          <li class = "item"><a>Ideas</a></li>
-          <li class = "item"><a>Host</a></li>
+          <li class = "item"><a href="#stay">Stay</a></li>
+          <li class = "item"><a href="#about">About</a></li>
+          <li class = "item"><a href="#ideas">Ideas</a></li>
+          <li class = "item"><a href="#host">Host</a></li>
         </ul>
 
       </nav>
@@ -36,6 +36,32 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form class="group">
+          <div>
+            <label class ="item" for="search">Location</label>
+            <input class ="item" id="search" type="text" name="search" placeholder ="Search destination" />  
+          </div> 
+          <div>
+            <label class ="item" for="arrive">Arrive</label>
+            <input class ="item" type="date" id="arrive" name="arrive">
+          </div>
+          <div>
+            <label class ="item" for="depart">Depart</label>
+            <input class ="item" type="date" id="depart" name="depart">
+          </div>
+          <div>
+            <label class ="item" for="type">Type</label>
+            <select class ="item" name="type" id="type" size="1">
+              <option value="apartment">Apartment</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="house">House</option>
+              <option value="condo">Condo</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Search</button>
+          </div>
+        </form>
       </section>
 
       <!-- About -->
